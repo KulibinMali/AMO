@@ -3,8 +3,7 @@ amoFn = (method as text, domen as text, login as text, hash as text, limits as n
     let
         authQuery =
             [
-                USER_LOGIN=login,
-                USER_HASH=hash
+                USER_TOKEN=token
                 ],
         url = "https://"&domen&".amocrm.ru",
         limit = if limits = null then 20000 else limits,
