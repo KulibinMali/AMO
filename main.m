@@ -2,9 +2,7 @@ let
 amoFn = (method as text, domen as text, login as text, token as text, limits as nullable number) =>
     let
         authQuery =
-            [
-                USER_TOKEN=token
-                ],
+            [USER_TOKEN=token],
         url = "https://"&domen&".amocrm.ru",
         limit = if limits = null then 20000 else limits,
 
