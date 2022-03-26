@@ -1,5 +1,5 @@
 let
-amoFn = (method as text, domen as text, login as text, token as text, limits as nullable number) =>
+amoFn = (method as text, domen as text, token as text, limits as nullable number) =>
     let
         authQuery =
             [USER_TOKEN=token],
